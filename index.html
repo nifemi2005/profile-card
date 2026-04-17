@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <header class="profile-header">
+        <figure class="avatar-figure">
+          <img
+            data-testid="test-user-avatar"
+            src="./Anjola.jpg"
+            alt="Oluwanifemi Temenu — Frontend Developer and Data Analyst"
+            class="avatar"
+          />
+          <figcaption class="avatar-caption">
+            Frontend Developer &amp; Data Analyst
+          </figcaption>
+        </figure>
+        <div class="profile-intro">
+          <h1 data-testid="test-user-name">Oluwanifemi Temenu</h1>
+          <p data-testid="test-user-bio" class="bio">
+            I am a frontend developer and data analyst passionate about building
+            clean, accessible web experiences and turning data into actionable
+            insights.
+          </p>
+          <p class="profile-time-label">
+            Current time (ms):
+            <time
+              data-testid="test-user-time"
+              aria-live="polite"
+              aria-atomic="true"
+              id="epoch-time"
+            ></time>
+          </p>
+        </div>
+      </header>
+
+      <nav aria-label="Social links">
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li>
+            <a
+              data-testid="test-user-social-linkedin"
+              href="https://www.linkedin.com/in/oluwanifemi-temenu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-twitter"
+              href="https://x.com/OxNiffy_"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter / X profile"
+              >Twitter / X</a
+            >
+          </li>
+          <li>
+            <a
+              data-testid="test-user-social-github"
+              href="https://github.com/nifemi2005/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lists-wrapper">
+        <section aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading">Hobbies</h2>
+          <ul data-testid="test-user-hobbies" class="tag-list">
+            <li>Reading tech blogs</li>
+            <li>Data visualisation</li>
+            <li>Open-source contributions</li>
+            <li>Reading Novels</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="dislikes-heading">
+          <h2 id="dislikes-heading">Dislikes</h2>
+          <ul data-testid="test-user-dislikes" class="tag-list">
+            <li>Noise</li>
+            <li>Math Courses</li>
+            <li>Messy Datasets</li>
+            <li>Hot enviroments</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
